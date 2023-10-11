@@ -1,0 +1,45 @@
+.task-item {
+  &__content {
+    padding-right: 30px;
+  }
+  &__action {
+    * {
+      height: 32px;
+    }
+    .edit {
+      width: 32px;
+      margin-right: 15px;
+      background: url("./../../../assets/images/edit.png") no-repeat 0 0 transparent;
+    }
+    .status {
+      width: 32px;
+      margin-right: 15px;
+      &.uncheck{
+        background: url("./../../../assets/images/uncheck.png") no-repeat 0 0 transparent;
+      }
+      &.check{
+        background: url("./../../../assets/images/check.png") no-repeat 0 0 transparent;
+      }
+    }
+    .delate {
+      background: url("./../../../assets/images/delete.png") no-repeat 0 0 transparent;
+      width: 26px;
+    }
+    button {
+      border: none;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .task-item {
+    &__content {
+      padding-right: 0;
+      width: 100%;
+      padding-bottom: 20px;
+    }
+  }
+}
